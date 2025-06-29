@@ -6,6 +6,7 @@ import { jwtDecode } from 'jwt-decode';
 
 // Create Auth Context
 const AuthContext = createContext();
+axios.defaults.baseURL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 
 // AuthProvider component to wrap around the app
 export const AuthProvider = ({ children }) => {
