@@ -108,6 +108,7 @@ const Register = () => {
 const styles = {
   container: {
     display: 'flex',
+    flexWrap: 'wrap',
     height: '100vh',
     backgroundColor: '#4a6fa5',
     position: 'relative', // Add this to make sure the button is positioned relative to the container
@@ -115,6 +116,7 @@ const styles = {
   registerSection: {
     flex: 1,
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
@@ -138,6 +140,7 @@ const styles = {
   thankYouSection: {
     flex: 1,
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
@@ -162,6 +165,7 @@ const styles = {
   },
   form: {
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     width: '100%',
     maxWidth: '400px',

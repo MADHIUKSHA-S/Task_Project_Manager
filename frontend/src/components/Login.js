@@ -145,12 +145,14 @@ const Login = () => {
 const styles = {
   container: {
     display: 'flex',
+    flexWrap: 'wrap',
     height: '100vh',
     backgroundColor: '#4a6fa5',
   },
   quoteContainer: {
     flex: 1,
     display: 'flex',
+    flexWrap: 'wrap',
     alignItems: 'center',
     justifyContent: 'center',
     padding: '20px',
@@ -184,6 +186,7 @@ const styles = {
   },
   quoteContent: {
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     alignItems: 'center',
   },
@@ -201,6 +204,7 @@ const styles = {
   loginContainer: {
     flex: 1,
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
@@ -215,6 +219,7 @@ const styles = {
   },
   form: {
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     width: '100%',
     maxWidth: '400px',

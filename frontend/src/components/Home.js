@@ -57,7 +57,7 @@ const Home = () => {
       {/* Layout Sections */}
       <div style={styles.mainContent}>
         {/* About Us Section */}
-        <div id="about" style={styles.leftColumn}>
+        <div id="about" >
           <div style={styles.section}>
             <h2 style={styles.sectionHeading}>About Us</h2>
             <p style={styles.sectionContent}>
@@ -109,7 +109,7 @@ const Home = () => {
         </div>
         
         {/* Get the App Section */}
-        <div id="get-the-app" style={styles.rightColumn}>
+        <div id="get-the-app" >
           <div style={styles.section}>
             <h2 style={styles.sectionHeading}>Get the App</h2>
             <p style={styles.sectionContent}>
@@ -120,7 +120,7 @@ const Home = () => {
         </div>
   
         {/* Contact Us Section */}
-        <div id="contact" style={styles.leftColumn}>
+        <div id="contact" >
           <div style={styles.section}>
             <h2 style={styles.sectionHeading}>Contact Us</h2>
             <p style={styles.sectionContent}>
@@ -139,6 +139,7 @@ const styles = {
   container: {
     position: 'relative',
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#e9ecef',
@@ -149,6 +150,7 @@ const styles = {
   },
   header: {
     display: 'flex',
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
     alignItems: 'center',
     width: '100%',
@@ -166,6 +168,7 @@ const styles = {
   },
   headerLinks: {
     display: 'flex',
+    flexWrap: 'wrap',
     alignItems: 'center',
     gap: '10px',
   },
@@ -204,6 +207,7 @@ const styles = {
   },
   buttonContainer: {
     display: 'flex',
+    flexWrap: 'wrap',
     justifyContent: 'center',
     gap: '20px',
   },
@@ -220,6 +224,7 @@ const styles = {
   },
   mainContent: {
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     width: '100%',
     maxWidth: '1200px',
@@ -228,6 +233,7 @@ const styles = {
   },
   leftColumn: {
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     width: '48%',
     opacity: 0,
@@ -236,6 +242,7 @@ const styles = {
   },
   rightColumn: {
     display: 'flex',
+    flexWrap: 'wrap',
     flexDirection: 'column',
     alignSelf: 'flex-end',
     width: '48%',
