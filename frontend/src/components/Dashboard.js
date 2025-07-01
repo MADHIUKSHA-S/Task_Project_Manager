@@ -358,7 +358,7 @@
   const styles = {
    container: {
   display: 'flex',
-  flexDirection: 'row',
+  flexDirection: 'column',
   height: '100vh',
   overflow: 'hidden',
   flexWrap: 'wrap', // ADD

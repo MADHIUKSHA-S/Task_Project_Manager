@@ -41,7 +41,7 @@ const Home = () => {
           <a href="#contact" style={styles.headerLink}>Contact</a>
           <Link to="/login" style={styles.headerLink}>Login</Link>
           <Link to="/register" style={styles.headerLink}>Register</Link>
-          <Link to="/download" style={styles.getAppButton}>Get App!</Link>
+          
         </div>
       </header>
       
