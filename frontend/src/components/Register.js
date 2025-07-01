@@ -104,26 +104,26 @@ const Register = () => {
     </div>
   );
 };
-
 const styles = {
   container: {
     display: 'flex',
-   
-    height: '100vh',
+    flexDirection: 'column', // Stacks on small screens
+    minHeight: '100vh',
     backgroundColor: '#4a6fa5',
-    position: 'relative', // Add this to make sure the button is positioned relative to the container
+    position: 'relative',
+    padding: '10px',
+    gap: '20px',
   },
   registerSection: {
     flex: 1,
     display: 'flex',
-
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     padding: '20px',
     backgroundColor: '#4a6fa5',
-    border: '50px solid #4a6fa5',
-    borderRadius: '70px',
+    borderRadius: '20px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
   },
   backButton: {
     position: 'absolute',
@@ -136,36 +136,37 @@ const styles = {
     padding: '10px 20px',
     cursor: 'pointer',
     fontSize: '1rem',
+    zIndex: 10,
   },
   thankYouSection: {
     flex: 1,
     display: 'flex',
-  
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     padding: '20px',
     backgroundColor: '#f3f4f6',
-    border: '50px solid #4a6fa5',
-    borderRadius: '70px',
+    borderRadius: '20px',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
   },
   smiley: {
-    fontSize: '4rem',  // Adjust size as needed
+    fontSize: '4rem',
     marginBottom: '20px',
   },
   heading: {
     fontSize: '2rem',
     marginBottom: '20px',
     color: '#fff',
+    textAlign: 'center',
   },
   thankYouHeading: {
     fontSize: '2rem',
     marginBottom: '20px',
     color: '#4a6fa5',
+    textAlign: 'center',
   },
   form: {
     display: 'flex',
-    
     flexDirection: 'column',
     width: '100%',
     maxWidth: '400px',
@@ -176,6 +177,7 @@ const styles = {
     borderRadius: '5px',
     border: '1px solid #ced4da',
     fontSize: '1rem',
+    width: '100%',
   },
   button: {
     padding: '15px',
@@ -185,12 +187,15 @@ const styles = {
     borderRadius: '5px',
     cursor: 'pointer',
     fontSize: '1rem',
+    marginTop: '10px',
   },
   thankYouMessage: {
     fontSize: '1rem',
     textAlign: 'center',
     color: '#333',
+    padding: '0 10px',
   },
 };
+
 
 export default Register;

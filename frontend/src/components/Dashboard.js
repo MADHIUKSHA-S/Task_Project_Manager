@@ -220,8 +220,20 @@
     };
 
     return (
-      <div style={styles.container} className={animationClass}><style>
+      <div style={styles.container} className={`responsive-flex`}>
+        <style>
       {`
+       @media (max-width: 768px) {
+    .responsive-flex {
+      flex-direction: column !important;
+    }
+    .responsive-half {
+      width: 100% !important;
+    }
+    .task-container-scroll {
+      flex-direction: column !important;
+    }
+  }
         @keyframes slideUp {
           from {
             opacity: 0;
@@ -239,7 +251,7 @@
       `}
     </style>
     
-        <div style={styles.addTaskSection}>
+        <div style={styles.addTaskSection} className="responsive-half">
           <header style={styles.header}>
             <h1 style={styles.heading}>Add Your Tasks</h1>
           </header>
@@ -284,7 +296,7 @@
           </form>
         </div>
 
-        <div style={styles.taskContainer}>
+        <div style={styles.taskContainer} className="task-container-scroll" >
           <div style={styles.taskListSection}>
             <h2 style={styles.subHeading}>Task List</h2>
             <div style={styles.sortButtonsContainer}>
@@ -344,11 +356,13 @@
     );
   };
   const styles = {
-    container: {
-      display: 'flex',
-      height: '100vh',
-      overflow: 'hidden', // Ensure the container handles overflow
-    },
+   container: {
+  display: 'flex',
+  flexDirection: 'row',
+  height: '100vh',
+  overflow: 'hidden',
+  flexWrap: 'wrap', // ADD
+},
     projectButton: {
       backgroundColor: '#28a745',
       color: '#fff',
@@ -360,15 +374,16 @@
       marginRight: '10px',
     },
     addTaskSection: {
-      width: '40%',
-      padding: '20px',
-      backgroundColor: '#f3f4f6',
-      borderRight: '2px solid #4a6fa5',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      overflowY: 'auto', // Allow vertical scrolling
-    },
+  width: '40%',
+  padding: '20px',
+  backgroundColor: '#f3f4f6',
+  borderRight: '2px solid #4a6fa5',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  overflowY: 'auto',
+  boxSizing: 'border-box',
+},
     header: {
       marginBottom: '20px',
     },
@@ -411,27 +426,30 @@
       fontSize: '1em',
     },
     taskContainer: {
-      width: '60%',
-      display: 'flex',
-      flexDirection: 'row',
-      gap: '20px',
-      overflow: 'auto', // Allow overflow handling
-    },
-    taskListSection: {
-      flex: 1,
-      padding: '20px',
-      backgroundColor: '#4a6fa5',
-      borderRadius: '3px',
-      overflowY: 'auto', // Allow vertical scrolling
-    },
+  width: '60%',
+  display: 'flex',
+  flexDirection: 'row',
+  gap: '20px',
+  overflow: 'auto',
+  flexWrap: 'wrap', // ADD
+  boxSizing: 'border-box',
+},
+taskListSection: {
+  flex: 1,
+  padding: '20px',
+  backgroundColor: '#4a6fa5',
+  borderRadius: '3px',
+  overflowY: 'auto',
+  minWidth: '300px', // ADD
+},
     finishedTasksSection: {
-      flex: 1,
-      padding: '20px',
-      backgroundColor: '#4a6fa5',
-      borderRadius: '3px',
-      position: 'relative',
-      overflowY: 'auto', // Allow vertical scrolling
-    },
+  flex: 1,
+  padding: '20px',
+  backgroundColor: '#4a6fa5',
+  borderRadius: '3px',
+  overflowY: 'auto',
+  minWidth: '300px', // ADD
+},
     subHeading: {
       fontSize: '1.5em',
       marginBottom: '10px',

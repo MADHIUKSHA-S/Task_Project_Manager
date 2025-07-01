@@ -333,185 +333,181 @@ const ProjectDashboard = () => {
     )};
 
   // Updated styles
-  const styles = {
-    container: {
-      display: 'flex',
-      
-      height: '100vh',
-      overflow: 'hidden',
-      backgroundColor: '#ffffff',
-    },
-    addProjectSection: {
-      width: '40%',
-      padding: '20px',
-      backgroundColor: '#f3f4f6',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-      borderRadius: '8px',
-      marginRight: '20px',
-      display: 'flex',
-     
-      flexDirection: 'column',
-      justifyContent: 'center',
-    },
-    header: {
-      marginBottom: '20px',
-    },
-    heading: {
-      fontSize: '2em',
-      color: '#4a6fa5',
-    },
-    form: {
-      display: 'flex',
-      
-      flexDirection: 'column',
-      gap: '15px',
-    },
-    input: {
-      padding: '10px',
-      borderRadius: '4px',
-      border: '1px solid #ccc',
-      fontSize: '1em',
-    },
-    textarea: {
-      padding: '10px',
-      borderRadius: '4px',
-      border: '1px solid #ccc',
-      fontSize: '1em',
-      minHeight: '100px',
-    },
-    select: {
-      padding: '10px',
-      borderRadius: '4px',
-      border: '1px solid #ccc',
-      fontSize: '1em',
-    },
-    button: {
-      backgroundColor: '#4a6fa5',
-      color: '#fff',
-      border: 'none',
-      padding: '10px 20px',
-      borderRadius: '4px',
-      cursor: 'pointer',
-      fontSize: '1em',
-    },
-    projectContainer: {
-      width: '60%',
-      display: 'flex',
-      
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      gap: '20px',
-    },
-    creator: {
-      fontStyle: 'italic',
-      color: '#007bff',  // Blue for the creator
-    },
-  
-    assignee: {
-      fontStyle: 'normal',
-      color: '#28a745',  // Green for the assignee
-    },  
-  
-    projectListSection: {
-      backgroundColor: '#4a6fa5',
-      padding: '20px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-      borderRadius: '8px',
-      flex: 1, 
-      overflowY: 'auto',
-    },
-    finishedProjectsSection: {
-      backgroundColor: '#4a6fa5',
-      padding: '20px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-      borderRadius: '8px',
-      flex: 1, 
-      overflowY: 'auto',
-    },
-    subHeading: {
-      fontSize: '1.5em',
-      marginBottom: '10px',
-      color: '#ffffff',
-    },
-    projectList: {
-      listStyleType: 'none',
-      padding: 0,
-      margin: 0,
-    },
-    projectItem: {
-      backgroundColor: '#f3f4f6',
-      borderRadius: '8px',
-      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-      padding: '15px',
-      marginBottom: '10px',
-    },
-    projectTitle: {
-      fontSize: '1.25em',
-      color: '#333',
-    },
-    projectDescription: {
-      fontSize: '1em',
-      color: '#555',
-    },
-    projectPriority: {
-      fontSize: '1em',
-      color: '#777',
-    },
-    projectDeadline: {
-      fontSize: '1em',
-      color: '#777',
-    },
-    statusInput: {
-      padding: '8px',
-      margin: '10px 0',
-      borderRadius: '4px',
-      border: '1px solid #ddd',
-      fontSize: '16px',
-      width: '70%',
-    },
-    updateStatusButton: {
-      padding: '8px 12px',
-      backgroundColor: '#4a6fa5',
-      color: '#fff',
-      border: 'none',
-      borderRadius: '4px',
-      cursor: 'pointer',
-      marginRight: '10px',
-    },
-    editButton: {
-      padding: '8px 12px',
-      backgroundColor: '#4a6fa5',
-      color: '#fff',
-      border: 'none',
-      borderRadius: '4px',
-      cursor: 'pointer',
-      marginRight: '10px',
-    },
-    finishButton: {
-      padding: '8px 12px',
-      backgroundColor: '#4a6fa5',
-      color: '#fff',
-      border: 'none',
-      borderRadius: '4px',
-      cursor: 'pointer',
-      marginRight: '10px',
-    },
-    deleteButton: {
-      padding: '8px 12px',
-      backgroundColor: '#4a6fa5',
-      color: '#fff',
-      border: 'none',
-      borderRadius: '4px',
-      cursor: 'pointer',
-    },
-    reopenButton: {
-      padding: '8px 12px',
-      backgroundColor: '#4a6fa5',
-      color: '#fff',
-      border: 'none',
-      borderRadius: '4px',
-      cursor: 'pointer',
-    }
-  };
-  
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column', // Stacks vertically on smaller screens
+    height: '100%',
+    overflow: 'hidden',
+    backgroundColor: '#ffffff',
+    padding: '10px',
+  },
+  addProjectSection: {
+    width: '100%',
+    marginBottom: '20px',
+    padding: '20px',
+    backgroundColor: '#f3f4f6',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    borderRadius: '8px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  header: {
+    marginBottom: '20px',
+  },
+  heading: {
+    fontSize: '2em',
+    color: '#4a6fa5',
+    textAlign: 'center',
+  },
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '15px',
+  },
+  input: {
+    padding: '10px',
+    borderRadius: '4px',
+    border: '1px solid #ccc',
+    fontSize: '1em',
+  },
+  textarea: {
+    padding: '10px',
+    borderRadius: '4px',
+    border: '1px solid #ccc',
+    fontSize: '1em',
+    minHeight: '100px',
+  },
+  select: {
+    padding: '10px',
+    borderRadius: '4px',
+    border: '1px solid #ccc',
+    fontSize: '1em',
+  },
+  button: {
+    backgroundColor: '#4a6fa5',
+    color: '#fff',
+    border: 'none',
+    padding: '10px 20px',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontSize: '1em',
+  },
+  projectContainer: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column', // stack sections vertically on mobile
+    gap: '20px',
+  },
+  projectListSection: {
+    backgroundColor: '#4a6fa5',
+    padding: '20px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    borderRadius: '8px',
+    flex: 1,
+    overflowY: 'auto',
+  },
+  finishedProjectsSection: {
+    backgroundColor: '#4a6fa5',
+    padding: '20px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    borderRadius: '8px',
+    flex: 1,
+    overflowY: 'auto',
+  },
+  subHeading: {
+    fontSize: '1.5em',
+    marginBottom: '10px',
+    color: '#ffffff',
+  },
+  projectList: {
+    listStyleType: 'none',
+    padding: 0,
+    margin: 0,
+  },
+  projectItem: {
+    backgroundColor: '#f3f4f6',
+    borderRadius: '8px',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    padding: '15px',
+    marginBottom: '10px',
+  },
+  projectTitle: {
+    fontSize: '1.25em',
+    color: '#333',
+  },
+  projectDescription: {
+    fontSize: '1em',
+    color: '#555',
+  },
+  projectPriority: {
+    fontSize: '1em',
+    color: '#777',
+  },
+  projectDeadline: {
+    fontSize: '1em',
+    color: '#777',
+  },
+  creator: {
+    fontStyle: 'italic',
+    color: '#007bff',
+  },
+  assignee: {
+    fontStyle: 'normal',
+    color: '#28a745',
+  },
+  statusInput: {
+    padding: '8px',
+    margin: '10px 0',
+    borderRadius: '4px',
+    border: '1px solid #ddd',
+    fontSize: '16px',
+    width: '100%', // Full width on small screens
+  },
+  updateStatusButton: {
+    padding: '8px 12px',
+    backgroundColor: '#4a6fa5',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    marginRight: '10px',
+  },
+  editButton: {
+    padding: '8px 12px',
+    backgroundColor: '#4a6fa5',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    marginRight: '10px',
+  },
+  finishButton: {
+    padding: '8px 12px',
+    backgroundColor: '#4a6fa5',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    marginRight: '10px',
+  },
+  deleteButton: {
+    padding: '8px 12px',
+    backgroundColor: '#4a6fa5',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+  },
+  reopenButton: {
+    padding: '8px 12px',
+    backgroundColor: '#4a6fa5',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+  },
+};
+
 export default ProjectDashboard;

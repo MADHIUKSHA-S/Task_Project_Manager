@@ -141,26 +141,27 @@ const Login = () => {
     </div>
   );
 };
-
 const styles = {
   container: {
     display: 'flex',
-    
+    flexDirection: 'row',
+    flexWrap: 'wrap', // Allow wrap on small screens
     height: '100vh',
     backgroundColor: '#4a6fa5',
   },
   quoteContainer: {
     flex: 1,
     display: 'flex',
-   
     alignItems: 'center',
     justifyContent: 'center',
     padding: '20px',
     backgroundColor: '#e9ecef',
     cursor: 'pointer',
-    border: '30px solid #4a6fa5',
-    borderRadius: '80px',
+    border: '20px solid #4a6fa5',
+    borderRadius: '40px',
     position: 'relative',
+    minWidth: '300px', // Prevent collapse on small screens
+    maxWidth: '100%',
   },
   arrowButtonLeft: {
     position: 'absolute',
@@ -186,12 +187,13 @@ const styles = {
   },
   quoteContent: {
     display: 'flex',
-    
     flexDirection: 'column',
     alignItems: 'center',
+    padding: '0 10px',
+    textAlign: 'center',
   },
   quote: {
-    fontSize: '1.5rem',
+    fontSize: '1.4rem',
     fontStyle: 'italic',
     textAlign: 'center',
     color: '#4a6fa5',
@@ -204,25 +206,27 @@ const styles = {
   loginContainer: {
     flex: 1,
     display: 'flex',
-    
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     padding: '20px',
     backgroundColor: '#4a6fa5',
     position: 'relative',
+    minWidth: '300px',
+    maxWidth: '100%',
   },
   heading: {
     fontSize: '2rem',
     marginBottom: '20px',
     color: '#fff',
+    textAlign: 'center',
   },
   form: {
     display: 'flex',
-    
     flexDirection: 'column',
     width: '100%',
     maxWidth: '400px',
+    padding: '0 10px',
   },
   input: {
     padding: '10px',
@@ -230,6 +234,7 @@ const styles = {
     borderRadius: '5px',
     border: '1px solid #ced4da',
     fontSize: '1rem',
+    width: '100%',
   },
   button: {
     padding: '15px',
@@ -239,6 +244,7 @@ const styles = {
     borderRadius: '5px',
     cursor: 'pointer',
     fontSize: '1rem',
+    marginTop: '10px',
   },
   backButton: {
     position: 'absolute',
@@ -253,5 +259,6 @@ const styles = {
     fontSize: '1rem',
   },
 };
+
 
 export default Login;

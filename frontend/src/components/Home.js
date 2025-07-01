@@ -139,7 +139,6 @@ const styles = {
   container: {
     position: 'relative',
     display: 'flex',
-   
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#e9ecef',
@@ -150,11 +149,10 @@ const styles = {
   },
   header: {
     display: 'flex',
-    
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
     alignItems: 'center',
     width: '100%',
-    height: '6%',
     padding: '10px 20px',
     position: 'fixed',
     top: 0,
@@ -165,10 +163,11 @@ const styles = {
   title: {
     fontSize: '2rem',
     color: '#4a6fa5',
+    marginBottom: '10px',
   },
   headerLinks: {
     display: 'flex',
-   
+    flexWrap: 'wrap',
     alignItems: 'center',
     gap: '10px',
   },
@@ -192,9 +191,10 @@ const styles = {
   },
   heroSection: {
     textAlign: 'center',
-    marginTop: '60px',
+    marginTop: '80px',
     marginBottom: '40px',
     width: '100%',
+    padding: '0 10px',
     opacity: 0,
     transform: 'translateY(50px)',
     transition: 'opacity 1s ease-out, transform 1s ease-out',
@@ -207,12 +207,12 @@ const styles = {
   },
   buttonContainer: {
     display: 'flex',
-    
+    flexWrap: 'wrap',
     justifyContent: 'center',
     gap: '20px',
   },
   button: {
-    padding: '15px 30px',
+    padding: '12px 24px',
     backgroundColor: '#4a6fa5',
     color: '#fff',
     textDecoration: 'none',
@@ -224,31 +224,12 @@ const styles = {
   },
   mainContent: {
     display: 'flex',
- 
     flexDirection: 'column',
     width: '100%',
     maxWidth: '1200px',
     marginTop: '20px',
     gap: '20px',
-  },
-  leftColumn: {
-    display: 'flex',
-   
-    flexDirection: 'column',
-    width: '48%',
-    opacity: 0,
-    transform: 'translateY(50px)',
-    transition: 'opacity 1s ease-out, transform 1s ease-out',
-  },
-  rightColumn: {
-    display: 'flex',
-    
-    flexDirection: 'column',
-    alignSelf: 'flex-end',
-    width: '48%',
-    opacity: 0,
-    transform: 'translateY(50px)',
-    transition: 'opacity 1s ease-out, transform 1s ease-out',
+    padding: '0 10px',
   },
   section: {
     backgroundColor: '#4a6fa5',
@@ -257,7 +238,7 @@ const styles = {
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   },
   sectionHeading: {
-    fontSize: '2rem',
+    fontSize: '1.75rem',
     marginBottom: '10px',
     color: '#fff',
   },
