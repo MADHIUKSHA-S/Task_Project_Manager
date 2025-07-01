@@ -346,8 +346,6 @@
   const styles = {
     container: {
       display: 'flex',
-    
-  flexWrap: 'wrap',
       height: '100vh',
       overflow: 'hidden', // Ensure the container handles overflow
     },
@@ -380,7 +378,7 @@
     },
     form: {
       display: 'flex',
-      flexWrap: 'wrap',
+    
       flexDirection: 'column',
       gap: '15px',
     },
@@ -485,7 +483,7 @@
     },
     buttonGroup: {
       display: 'flex',
-      flexWrap: 'wrap',
+      
       gap: '10px',
     },
     editButton: {
@@ -522,7 +520,7 @@
     },
     finishedTasksHeader: {
       display: 'flex',
-      flexWrap: 'wrap',
+    
       justifyContent: 'space-between',
       alignItems: 'center',
       marginBottom: '20px',

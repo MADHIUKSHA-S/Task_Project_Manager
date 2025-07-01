@@ -139,7 +139,7 @@ const styles = {
   container: {
     position: 'relative',
     display: 'flex',
-    flexWrap: 'wrap',
+   
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#e9ecef',
@@ -150,7 +150,7 @@ const styles = {
   },
   header: {
     display: 'flex',
-    flexWrap: 'wrap',
+    
     justifyContent: 'space-between',
     alignItems: 'center',
     width: '100%',
@@ -168,7 +168,7 @@ const styles = {
   },
   headerLinks: {
     display: 'flex',
-    flexWrap: 'wrap',
+   
     alignItems: 'center',
     gap: '10px',
   },
@@ -207,7 +207,7 @@ const styles = {
   },
   buttonContainer: {
     display: 'flex',
-    flexWrap: 'wrap',
+    
     justifyContent: 'center',
     gap: '20px',
   },
@@ -224,7 +224,7 @@ const styles = {
   },
   mainContent: {
     display: 'flex',
-    flexWrap: 'wrap',
+ 
     flexDirection: 'column',
     width: '100%',
     maxWidth: '1200px',
@@ -233,7 +233,7 @@ const styles = {
   },
   leftColumn: {
     display: 'flex',
-    flexWrap: 'wrap',
+   
     flexDirection: 'column',
     width: '48%',
     opacity: 0,
@@ -242,7 +242,7 @@ const styles = {
   },
   rightColumn: {
     display: 'flex',
-    flexWrap: 'wrap',
+    
     flexDirection: 'column',
     alignSelf: 'flex-end',
     width: '48%',

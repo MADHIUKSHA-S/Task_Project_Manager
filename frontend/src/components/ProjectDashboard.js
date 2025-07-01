@@ -336,7 +336,7 @@ const ProjectDashboard = () => {
   const styles = {
     container: {
       display: 'flex',
-      flexWrap: 'wrap',
+      
       height: '100vh',
       overflow: 'hidden',
       backgroundColor: '#ffffff',
@@ -349,7 +349,7 @@ const ProjectDashboard = () => {
       borderRadius: '8px',
       marginRight: '20px',
       display: 'flex',
-      flexWrap: 'wrap',
+     
       flexDirection: 'column',
       justifyContent: 'center',
     },
@@ -362,7 +362,7 @@ const ProjectDashboard = () => {
     },
     form: {
       display: 'flex',
-      flexWrap: 'wrap',
+      
       flexDirection: 'column',
       gap: '15px',
     },
@@ -397,7 +397,7 @@ const ProjectDashboard = () => {
     projectContainer: {
       width: '60%',
       display: 'flex',
-      flexWrap: 'wrap',
+      
       flexDirection: 'row',
       justifyContent: 'space-between',
       gap: '20px',
