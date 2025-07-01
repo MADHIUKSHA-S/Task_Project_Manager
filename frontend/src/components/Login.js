@@ -234,7 +234,7 @@ const styles = {
     borderRadius: '5px',
     border: '1px solid #ced4da',
     fontSize: '1rem',
-    width: '100%',
+   
   },
   button: {
     padding: '15px',
