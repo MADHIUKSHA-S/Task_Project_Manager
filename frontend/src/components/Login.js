@@ -224,8 +224,8 @@ const styles = {
   form: {
     display: 'flex',
     flexDirection: 'column',
-    width: '80%',
-    maxWidth: '300px',
+    width: '70%',
+    maxWidth: '200px',
     padding: '0 10px',
   },
   input: {
