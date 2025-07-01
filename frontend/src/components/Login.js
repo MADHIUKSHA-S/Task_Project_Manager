@@ -226,7 +226,7 @@ const styles = {
     flexDirection: 'column',
     width: '70%',
     maxWidth: '200px',
-    padding: '0 10px',
+    padding: '0 15px',
   },
   input: {
     padding: '10px',
