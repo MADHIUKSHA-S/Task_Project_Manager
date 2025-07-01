@@ -376,7 +376,7 @@
       marginRight: '10px',
     },
     addTaskSection: {
-  width: '80%',
+  width: '100%',
   padding: '20px',
   backgroundColor: '#f3f4f6',
   borderRight: '2px solid #4a6fa5',
