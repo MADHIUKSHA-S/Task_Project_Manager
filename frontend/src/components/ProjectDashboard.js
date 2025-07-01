@@ -343,7 +343,7 @@ const styles = {
     padding: '10px',
   },
   addProjectSection: {
-    width: '100%',
+    width: '80',
     marginBottom: '20px',
     padding: '20px',
     backgroundColor: '#f3f4f6',
