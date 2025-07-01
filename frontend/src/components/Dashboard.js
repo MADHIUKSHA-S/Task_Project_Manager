@@ -224,16 +224,18 @@
         <style>
       {`
        @media (max-width: 768px) {
-    .responsive-flex {
-      flex-direction: column !important;
-    }
-    .responsive-half {
-      width: 100% !important;
-    }
-    .task-container-scroll {
-      flex-direction: column !important;
-    }
+  .responsive-flex {
+    flex-direction: column !important;
   }
+  .responsive-half {
+    width: 100% !important;
+  }
+  .task-container-scroll {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+}
+
         @keyframes slideUp {
           from {
             opacity: 0;
@@ -359,9 +361,11 @@
    container: {
   display: 'flex',
   flexDirection: 'column',
-  height: '100vh',
+  minHeight: '100vh', // allow content to grow
   overflow: 'auto',
-  flexWrap: 'wrap', // ADD
+  flexWrap: 'wrap',
+
+
 },
     projectButton: {
       backgroundColor: '#28a745',
@@ -426,30 +430,34 @@
       fontSize: '1em',
     },
     taskContainer: {
-  width: '60%',
+  width: '100%', // Previously 60%
   display: 'flex',
   flexDirection: 'row',
   gap: '20px',
-  overflow: 'auto',
-  flexWrap: 'wrap', // ADD
+  flexWrap: 'wrap',
   boxSizing: 'border-box',
 },
+
 taskListSection: {
   flex: 1,
   padding: '20px',
   backgroundColor: '#4a6fa5',
   borderRadius: '3px',
   overflowY: 'auto',
-  minWidth: '300px', // ADD
+  minWidth: '300px',
+ // Add if needed
 },
-    finishedTasksSection: {
+
+finishedTasksSection: {
   flex: 1,
   padding: '20px',
   backgroundColor: '#4a6fa5',
   borderRadius: '3px',
   overflowY: 'auto',
-  minWidth: '300px', // ADD
+  minWidth: '300px',
+  
 },
+
     subHeading: {
       fontSize: '1.5em',
       marginBottom: '10px',
