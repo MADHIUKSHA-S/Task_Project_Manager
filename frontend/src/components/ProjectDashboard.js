@@ -338,7 +338,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column', // Stacks vertically on smaller screens
     height: '100%',
-    overflow: 'hidden',
+    overflow: 'auto',
     backgroundColor: '#ffffff',
     padding: '10px',
   },

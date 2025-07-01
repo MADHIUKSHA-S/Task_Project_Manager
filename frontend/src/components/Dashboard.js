@@ -360,7 +360,7 @@
   display: 'flex',
   flexDirection: 'column',
   height: '100vh',
-  overflow: 'hidden',
+  overflow: 'auto',
   flexWrap: 'wrap', // ADD
 },
     projectButton: {
