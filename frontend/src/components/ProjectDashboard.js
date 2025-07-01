@@ -426,13 +426,17 @@ const styles = {
     padding: 0,
     margin: 0,
   },
-  projectItem: {
-    backgroundColor: '#f3f4f6',
-    borderRadius: '8px',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-    padding: '15px',
-    marginBottom: '10px',
-  },
+ projectItem: {
+  backgroundColor: '#f3f4f6',
+  borderRadius: '8px',
+  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+  padding: '15px',
+  marginBottom: '10px',
+  cursor: 'pointer',                  // ✅ make it visually and behaviorally clickable
+  touchAction: 'manipulation',        // ✅ improve mobile responsiveness// ✅ remove gray overlay on iOS tap
+  zIndex: 1,                          // ✅ avoid overlapping issues
+},
+
   projectTitle: {
     fontSize: '1.25em',
     color: '#333',

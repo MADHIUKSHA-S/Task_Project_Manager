@@ -227,9 +227,7 @@
   .responsive-flex {
     flex-direction: column !important;
   }
-  .responsive-half {
-    width: 100% !important;
-  }
+  
   .task-container-scroll {
     flex-direction: column !important;
     width: 100% !important;
@@ -253,7 +251,7 @@
       `}
     </style>
     
-        <div style={styles.addTaskSection} className="responsive-half">
+        <div style={styles.addTaskSection} >
           <header style={styles.header}>
             <h1 style={styles.heading}>Add Your Tasks</h1>
           </header>
@@ -378,7 +376,7 @@
       marginRight: '10px',
     },
     addTaskSection: {
-  width: '40%',
+  width: '80%',
   padding: '20px',
   backgroundColor: '#f3f4f6',
   borderRight: '2px solid #4a6fa5',
